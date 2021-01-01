@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Online Event Management</title>
+	</head>
+
+	<body>
+		<header>
+			<h1 class="main-header">Online Event Management</h1>
+			<nav class="container">
+				<a href="/">Home</a>
+				<a href="/login.html">Login</a>
+				<a href="/register.html">Register</a>
+				<a href="/contactUs.html" class="active-nav">Contact Us</a>
+			</nav>
+		</header>
+
+		<main>
+			<form
+				name="Login form"
+				autocomplete="on"
+				onsubmit="validate()"
+				method="POST"
+				style="max-width: 600px; margin: auto"
+			>
+				<fieldset>
+					<legend>Contact Us</legend>
+					<div class="input-group">
+						<div class="input-member">
+							<label for="email">Email Address</label>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Enter email address..."
+								autofocus
+								required
+							/>
+						</div>
+						<div class="input-member">
+							<label for="name">Name</label>
+							<input
+								type="text"
+								name="name"
+								id="name"
+								placeholder="Enter you Name..."
+								autofocus
+								required
+							/>
+						</div>
+					</div>
+
+					<label for="message">Message</label><br />
+					<textarea rows="4" cols="50" name="message" id="message">
+Enter your message here. We will get in touch with you soon...</textarea
+					>
+				</fieldset>
+
+				<!-- submit button won't work as action file is not written-->
+				<button type="submit" value="Submit">Send</button>
+				<button type="reset">Reset form</button>
+			</form>
+		</main>
+
+		<footer>
+			<span>Copyright&copy; 2020 Online Event Management Ltd., India</span>
+		</footer>
+	</body>
+</html>

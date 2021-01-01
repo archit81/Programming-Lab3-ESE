@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Online Event Management</title>
+	</head>
+
+	<body>
+		<header>
+			<h1 class="main-header">Online Event Management</h1>
+			<nav class="container">
+				<a href="/">Home</a>
+				<a href="/login.html">Login</a>
+				<a href="/register.html" class="active-nav">Register</a>
+				<a href="/contactUs.html">Contact Us</a>
+			</nav>
+		</header>
+
+		<main>
+			<form name="Register form" id="register-form" autocomplete="on" method="POST">
+				<fieldset>
+					<legend>Event Registeration Form</legend>
+					<div class="input-group">
+						<div class="input-member">
+							<label for="fname">First Name</label>
+							<input type="text" name="fname" id="fname" placeholder="First Name..." autofocus required />
+						</div>
+						<div class="input-member">
+							<label for="mname">Middle Name</label>
+							<input
+								type="text"
+								name="mname"
+								id="mname"
+								placeholder="Middle Name..."
+								autofocus
+								required
+							/>
+						</div>
+						<div class="input-member">
+							<label for="lname">Last Name</label>
+							<input type="text" name="lname" id="lname" placeholder="Last Name..." autofocus required />
+						</div>
+					</div>
+					<div class="input-group">
+						<div class="input-member">
+							<label for="email">Email Address</label>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Enter email address..."
+								autofocus
+								required
+							/>
+						</div>
+						<div class="input-member">
+							<label for="contact">Contact Number</label>
+							<input
+								type="text"
+								name="contact"
+								id="contact"
+								placeholder="Enter contact No..."
+								autofocus
+								required
+							/>
+						</div>
+						<div class="input-member">
+							<label for="location">Location</label>
+							<input
+								type="text"
+								name="location"
+								id="location"
+								placeholder="Event Location..."
+								autofocus
+								required
+							/>
+						</div>
+					</div>
+
+					<div class="input-group">
+						<div class="input-member">
+							<label for="password">Password</label>
+							<input
+								type="password"
+								name="password"
+								id="password"
+								placeholder="Enter password..."
+								autofocus
+								required
+							/>
+						</div>
+						<div class="input-member">
+							<label for="cpassword">Confirm Password</label>
+							<input
+								type="password"
+								name="cpassword"
+								id="cpassword"
+								placeholder="Enter password..."
+								autofocus
+								required
+							/>
+						</div>
+						<div class="input-member" style="visibility: hidden">
+							<label for="cpassword">Confirm Password</label>
+							<input
+								type="password"
+								name="cpassword"
+								id="cpassword"
+								placeholder="Enter password..."
+								autofocus
+								required
+							/>
+						</div>
+					</div>
+
+					<hr />
+					<div>
+						<h4 class="input-label">Event Category</h4>
+						<div class="options">
+							<span>
+								<input type="radio" id="Wedding" name="event" value="Wedding" required />
+								<label for="Wedding">Wedding</label>
+							</span>
+							<span>
+								<input type="radio" id="Birthday" name="event" value="Birthday" />
+								<label for="Birthday">Birthday</label> </span
+							><span>
+								<input type="radio" id="Anniversary" name="event" value="Anniversary" />
+								<label for="Anniversary">Anniversary</label> </span
+							><span>
+								<input type="radio" id="Other" name="event" value="Other" />
+								<label for="Other">Other</label></span
+							>
+						</div>
+					</div>
+
+					<div>
+						<h4 class="input-label">Food Type</h4>
+						<div class="options">
+							<span>
+								<input type="radio" id="maharashtra" name="foods" value="maharashtra" required />
+								<label for="Wedding">Maharashtrian</label>
+							</span>
+							<span>
+								<input type="radio" id="punjabi" name="foods" value="punjabi" />
+								<label for="Birthday">Punjabi</label> </span
+							><span>
+								<input type="radio" id="italian" name="foods" value="italian" />
+								<label for="Anniversary">Italian</label> </span
+							><span>
+								<input type="radio" id="spanish" name="foods" value="spanish" />
+								<label for="Other">Spanish</label></span
+							>
+						</div>
+					</div>
+
+					<br />
+					<hr />
+					<div class="input-group">
+						<div class="input-member">
+							<label for="location">Location</label>
+							<input
+								type="text"
+								name="location"
+								id="location"
+								placeholder="Event Location..."
+								autofocus
+								required
+							/>
+						</div>
+
+						<div class="input-member">
+							<label for="budget">Expected Budget</label>
+							<input
+								type="number"
+								name="budget"
+								id="budget"
+								placeholder="Estimated Budget..."
+								autofocus
+								required
+							/>
+						</div>
+						<div class="input-member">
+							<label for="guests">Expected Guests</label>
+							<input
+								type="number"
+								name="guests"
+								id="guests"
+								placeholder="Estimated No. of attendees..."
+								autofocus
+								required
+							/>
+						</div>
+					</div>
+
+					<div class="input-group">
+						<div class="input-member">
+							<label for="date">Event Date</label>
+							<input type="date" name="Date" id="Date" placeholder="Event Date..." autofocus required />
+						</div>
+						<div class="input-member">
+							<label for="time">Event Timing</label>
+							<input type="time" name="time" id="time" placeholder="Event Time..." autofocus required />
+						</div>
+					</div>
+					<br />
+					<input id="checkbox" type="checkbox" required />
+					<label for="checkbox"> I agree to these <a href="#">Terms and Conditions</a>.</label>
+				</fieldset>
+
+				<!-- submit button won't work as action file is not written-->
+				<button type="submit" value="Submit">Submit</button>
+				<button type="reset">Reset form</button>
+			</form>
+		</main>
+
+		<footer>
+			<span>Copyright&copy; 2020 Online Event Management Ltd., India</span>
+		</footer>
+	</body>
+</html>
